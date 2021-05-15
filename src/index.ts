@@ -4,7 +4,7 @@ import { getPixelsViaImageDecode } from './image-decode';
 
 /**
  * get pixel data without colour profile
- * 
+ *
  * order of attempts at retrieving pixel data will be:
  * - loading into an `ImageBitmap` and reading from a WebGL framebuffer
  * - fetching as a buffer and parsing via [`image-decode`](https://www.npmjs.com/package/image-decode)
@@ -21,12 +21,6 @@ import { getPixelsViaImageDecode } from './image-decode';
  */
 export function getPixels(src: string) {
 	return getPixelsViaImageBitmap(src)
-		.catch((err) => {
-			console.error(err);
-			return getPixelsViaImageDecode(src)
-		})
-		.catch((err) => {
-			console.error(err);
-			return getPixelsViaImageData(src)
-		});
+		.catch(() => getPixelsViaImageDecode(src))
+		.catch(() => getPixelsViaImageData(src));
 }

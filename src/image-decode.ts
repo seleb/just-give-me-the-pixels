@@ -1,6 +1,5 @@
 export async function getPixelsViaImageDecode(src: string) {
 	const imageDecode = await import('image-decode');
-	console.log(imageDecode);
 	const response = await fetch(src);
 	if (!response.ok) {
 		throw new Error('Issue loading image');
