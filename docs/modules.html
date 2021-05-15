@@ -57,29 +57,29 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#just-give-me-the-pixels" id="just-give-me-the-pixels" style="color: inherit; text-decoration: none;">
-					<h1><code>just-give-me-the-pixels</code></h1>
-				</a>
-				<p>get pixel data without colour profile</p>
-				<pre><code class="language-sh"><span style="color: #000000">npm i just-give-me-the-pixels</span>
-</code></pre>
-				<p>order of attempts at retrieving pixel data will be:</p>
-				<ul>
-					<li>loading into an <code>ImageBitmap</code> and reading from a WebGL framebuffer</li>
-					<li>fetching as a buffer and parsing via <a href="https://www.npmjs.com/package/image-decode"><code>image-decode</code></a></li>
-					<li>loading into an <code>img</code>, drawing into a <code>canvas</code>, and reading via <code>ImageData</code></li>
-				</ul>
-				<p>example:</p>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getPixels</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;just-give-me-the-pixels&#039;</span><span style="color: #000000">;</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">width</span><span style="color: #000000">, </span><span style="color: #0070C1">height</span><span style="color: #000000">, </span><span style="color: #0070C1">data</span><span style="color: #000000"> } = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">getPixels</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;image src.png&#039;</span><span style="color: #000000">);</span>
-</code></pre>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-module"><a href="modules/getimage.html" class="tsd-kind-icon">get<wbr>Image</a></li>
+								<li class="tsd-kind-module"><a href="modules/image_bitmap.html" class="tsd-kind-icon">image-<wbr>bitmap</a></li>
+								<li class="tsd-kind-module"><a href="modules/image_data.html" class="tsd-kind-icon">image-<wbr>data</a></li>
+								<li class="tsd-kind-module"><a href="modules/image_decode.html" class="tsd-kind-icon">image-<wbr>decode</a></li>
+								<li class="tsd-kind-module"><a href="modules/index.html" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-module"><a href="modules/types_image_decode.html" class="tsd-kind-icon">types/image-<wbr>decode</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" ">
+					<li class="current ">
 						<a href="modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">

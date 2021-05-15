@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/seleb/just-give-me-the-pixels/compare/v1.0.1...v1.0.2) (2021-05-15)
+
+
+### Bug Fixes
+
+* try to get canvas context to fail out sooner ([c99e1cb](https://github.com/seleb/just-give-me-the-pixels/commit/c99e1cb8142b49f70e7601f9db69ad9e8373098a))
+
 ## [1.0.1](https://github.com/seleb/just-give-me-the-pixels/compare/v1.0.0...v1.0.1) (2021-05-15)
 
 
