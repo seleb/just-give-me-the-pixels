@@ -19,7 +19,7 @@
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
     "build:doc": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --out docs",
-    "test": "run-s build test:*",
+    "test": "run-s test:*",
     "test:lint": "eslint src --ext .ts",
     "test:prettier": "prettier \"src/**/*.ts\"",
     "postversion": "rm -rf build && rm -rf docs && npm run build"
