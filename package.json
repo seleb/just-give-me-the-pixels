@@ -4,11 +4,8 @@
   "description": "get pixel data without colour profile",
   "repository": "https://github.com/seleb/just-give-me-the-pixels",
   "license": "MIT",
-  "keywords": [
-  ],
-  "scripts": {
-  },
+  "keywords": [],
+  "scripts": {},
   "dependencies": {},
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
