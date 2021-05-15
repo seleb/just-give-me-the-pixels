@@ -1,0 +1,14 @@
+{
+  "name": "just-give-me-the-pixels",
+  "version": "1.0.0",
+  "description": "get pixel data without colour profile",
+  "repository": "https://github.com/seleb/just-give-me-the-pixels",
+  "license": "MIT",
+  "keywords": [
+  ],
+  "scripts": {
+  },
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
