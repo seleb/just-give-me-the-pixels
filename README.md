@@ -16,5 +16,5 @@ example:
 
 ```ts
 import { getPixels } from 'just-give-me-the-pixels';
-const { width, height, data } = await('image src.png');
+const { width, height, data } = await getPixels('image src.png');
 ```
