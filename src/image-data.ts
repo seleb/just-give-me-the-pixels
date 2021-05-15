@@ -1,10 +1,7 @@
+import { getImage } from "./getImage";
+
 export async function getPixelsViaImageData(src: string) {
-	const img = new Image();
-	await new Promise((resolve, reject) => {
-		img.onload = resolve;
-		img.onerror = reject;
-		img.src = src;
-	});
+	const img = await getImage(src);
 	const width = img.naturalWidth;
 	const height = img.naturalHeight;
 
