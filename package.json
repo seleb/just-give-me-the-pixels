@@ -21,7 +21,7 @@
     "build:doc": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --out docs",
     "test": "run-s test:*",
     "test:lint": "eslint src --ext .ts",
-    "test:prettier": "prettier \"src/**/*.ts\"",
+    "test:prettier": "prettier \"src/**/*.ts\" --list-different",
     "postversion": "rm -rf build && rm -rf docs && npm run build"
   },
   "dependencies": {
