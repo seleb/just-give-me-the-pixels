@@ -1,6 +1,10 @@
-# just-give-me-the-pixels
+# `just-give-me-the-pixels`
 
 get pixel data without colour profile
+
+```sh
+npm i just-give-me-the-pixels
+```
 
 order of attempts at retrieving pixel data will be:
 
