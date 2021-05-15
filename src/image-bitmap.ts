@@ -1,20 +1,20 @@
 import { getImage } from './getImage';
 
 export async function getPixelsViaImageBitmap(src: string) {
+	const canvas = document.createElement('canvas');
+	const gl = canvas.getContext('webgl') || (canvas.getContext('experimental-webgl') as WebGLRenderingContext | null);
+	if (!gl) {
+		throw new Error('No WebGL support');
+	}
 	const img = await getImage(src);
 	const bitmap = await createImageBitmap(img, {
 		colorSpaceConversion: 'none',
 	});
 	const width = bitmap.width;
 	const height = bitmap.height;
-	const canvas = document.createElement('canvas');
 	canvas.width = width;
 	canvas.height = height;
 
-	const gl = canvas.getContext('webgl') || (canvas.getContext('experimental-webgl') as WebGLRenderingContext | null);
-	if (!gl) {
-		throw new Error('No WebGL support');
-	}
 	const texture = gl.createTexture();
 	gl.bindTexture(gl.TEXTURE_2D, null);
 	gl.activeTexture(gl.TEXTURE0);
