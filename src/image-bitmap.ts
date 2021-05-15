@@ -34,8 +34,10 @@ export async function getPixelsViaImageBitmap(src: string) {
 	gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, texture, 0);
 	const data = new Uint8Array(width * height * 4);
 	gl.readPixels(0, 0, width, height, gl.RGBA, gl.UNSIGNED_BYTE, data);
-
-	// Unbind the framebuffer
 	gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+	gl.bindTexture(gl.TEXTURE_2D, null);
+	gl.deleteFramebuffer(fb);
+	gl.deleteTexture(texture);
+	canvas.width = canvas.height = 1;
 	return { width, height, data };
 }
