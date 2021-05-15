@@ -1,4 +1,4 @@
-import { getImage } from "./getImage";
+import { getImage } from './getImage';
 
 export async function getPixelsViaImageData(src: string) {
 	const img = await getImage(src);

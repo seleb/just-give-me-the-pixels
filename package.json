@@ -21,7 +21,7 @@
     "build:doc": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --out docs",
     "test": "run-s build test:*",
     "test:lint": "eslint src --ext .ts",
-    "test:prettier": "prettier \"src/**/*.ts\" --list-different",
+    "test:prettier": "prettier \"src/**/*.ts\"",
     "postversion": "rm -rf build && rm -rf docs && npm run build"
   },
   "dependencies": {
@@ -62,5 +62,10 @@
         }
       ]
     ]
+  },
+  "prettier": {
+    "useTabs": true,
+    "singleQuote": true,
+    "printWidth": 160
   }
 }
