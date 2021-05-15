@@ -19,7 +19,7 @@ import { getPixelsViaImageDecode } from './image-decode';
  * @param src image source
  * @returns image width, height, and data
  */
-export function getPixels(src: string) {
+export function getPixels(src: string): Promise<{ data: Uint8Array | Uint8ClampedArray; height: number; width: number }> {
 	return getPixelsViaImageBitmap(src)
 		.catch(() => getPixelsViaImageDecode(src))
 		.catch(() => getPixelsViaImageData(src));
