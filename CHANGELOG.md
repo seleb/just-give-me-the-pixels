@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/seleb/just-give-me-the-pixels/compare/v1.0.2...v1.0.3) (2021-05-18)
+
+
+### Bug Fixes
+
+* docs ([a2b334c](https://github.com/seleb/just-give-me-the-pixels/commit/a2b334cb806acddbc5c19dd997b3b8324db68250))
+
 ## [1.0.2](https://github.com/seleb/just-give-me-the-pixels/compare/v1.0.1...v1.0.2) (2021-05-15)
 
 
