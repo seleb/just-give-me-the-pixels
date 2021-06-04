@@ -18,3 +18,5 @@ example:
 import { getPixels } from 'just-give-me-the-pixels';
 const { width, height, data } = await getPixels('image src.png');
 ```
+
+note: the primary motivation for this module was to address issues on firefox which have since been fixed in v89
